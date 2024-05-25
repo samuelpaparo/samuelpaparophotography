@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for launch page */
+        .launch-container {
+            background-image: url('background_image.jpg'); /* Replace 'background_image.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace; /* Vintage font */
+        }
+        .enter-button {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            outline: none;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .enter-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="launch-container">
+        <button class="enter-button" onclick="window.location.href='#about'">Enter</button>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <h1>showing photos from the archive</h1>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>de me ipso:</h2>
+            <p>samuel paparo... 20 years old... photography: 2023-present </p>
+        </section>
+        <section id="gallery">
+            <h2> polyptychum: theatrum mundi </h2>
+            <div class="grid-container">
+                <div class="grid-item"><img src="photo1.JPG" alt="Photo 1"></div>
+                <div class="grid-item"><img src="photo2.jpg" alt="Photo 2"></div>
+                <div class="grid-item"><img src="photo3.jpg" alt="Photo 3"></div>
+                <div class="grid-item"><img src="photo4.jpg" alt="Photo 4"></div>
+                <!-- Add more photos as needed -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>contact</h2>
+            <form action="https://formspree.io/f/yourformid" method="POST">
+                <label for="name">name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 samuel paparo. all rights reserved.</p>
+    </footer>
+</body>
+
+</html>
